@@ -103,7 +103,7 @@ git clone https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin.git Roborock
 Enter the plugin directory:
 
 ```bash
-cd Roborock
+cd Roborock-MiIO
 ```
 
 Make the scripts executable:
@@ -145,13 +145,13 @@ If you do not want to use Git, download the repository ZIP from GitHub.
 Extract it so the plugin files are located directly in:
 
 ```text
-/home/pi/domoticz/plugins/Roborock
+/home/pi/domoticz/plugins/Roborock-MiIO
 ```
 
 The final folder should look similar to:
 
 ```text
-Roborock/
+Roborock-MiIO/
 ├── plugin.py
 ├── roborock_client.py
 ├── miio_crypto_compat.py
@@ -167,7 +167,7 @@ Roborock/
 Then run:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 chmod +x install.sh update.sh uninstall.sh run_diagnostic.sh diagnostic.py miio_crypto_compat.py
 ./install.sh
 sudo systemctl restart domoticz
@@ -180,7 +180,7 @@ sudo systemctl restart domoticz
 The installer automatically creates a dedicated Python virtual environment:
 
 ```text
-/home/pi/domoticz/plugins/Roborock/.venv
+/home/pi/domoticz/plugins/Roborock-MiIO/.venv
 ```
 
 All required Python packages are installed inside this directory.
@@ -207,7 +207,7 @@ sudo apt install python3-venv
 Then run:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 ./install.sh
 ```
 
