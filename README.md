@@ -97,7 +97,7 @@ cd /home/pi/domoticz/plugins
 Clone the repository:
 
 ```bash
-git clone https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin.git Roborock
+git clone https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin.git Roborock-MiIO
 ```
 
 Enter the plugin directory:
