@@ -1,0 +1,338 @@
+{
+  "diagnostic": {
+    "created_at": "2026-07-15T17:13:59.148658+03:00",
+    "read_only": true,
+    "ip": "192.168.0.142",
+    "model_requested": "roborock.vacuum.s5",
+    "token_masked": "************************46654862",
+    "python_version": "3.11.2",
+    "python_miio_version": "0.5.12",
+    "extended": false,
+    "timeout_seconds_requested": 5,
+    "timeout_mode": "library_default",
+    "successful_queries": 10,
+    "failed_or_unsupported_queries": 0
+  },
+  "results": {
+    "device_info": {
+      "supported": true,
+      "elapsed_seconds": 0.102,
+      "result": {
+        "_type": "DeviceInfo",
+        "raw": {
+          "hw_ver": "Linux",
+          "fw_ver": "3.5.8_002034",
+          "ap": {
+            "ssid": "MyNetwork",
+            "bssid": "90:9A:4A:37:8E:C3",
+            "rssi": -63
+          },
+          "netif": {
+            "localIp": "192.168.0.142",
+            "mask": "255.255.255.0",
+            "gw": "192.168.0.1"
+          },
+          "miio_ver": "miio-client 3.5.8",
+          "model": "roborock.vacuum.s5",
+          "mac": "7C:49:EB:9E:7A:92",
+          "token": "756778524a50726f7332753146654862",
+          "life": 49576
+        },
+        "properties": {
+          "accesspoint": {
+            "ssid": "MyNetwork",
+            "bssid": "90:9A:4A:37:8E:C3",
+            "rssi": -63
+          },
+          "firmware_version": "3.5.8_002034",
+          "hardware_version": "Linux",
+          "ip_address": "192.168.0.142",
+          "mac_address": "7C:49:EB:9E:7A:92",
+          "model": "roborock.vacuum.s5",
+          "network_interface": {
+            "localIp": "192.168.0.142",
+            "mask": "255.255.255.0",
+            "gw": "192.168.0.1"
+          },
+          "raw": {
+            "hw_ver": "Linux",
+            "fw_ver": "3.5.8_002034",
+            "ap": {
+              "ssid": "MyNetwork",
+              "bssid": "90:9A:4A:37:8E:C3",
+              "rssi": -63
+            },
+            "netif": {
+              "localIp": "192.168.0.142",
+              "mask": "255.255.255.0",
+              "gw": "192.168.0.1"
+            },
+            "miio_ver": "miio-client 3.5.8",
+            "model": "roborock.vacuum.s5",
+            "mac": "7C:49:EB:9E:7A:92",
+            "token": "756778524a50726f7332753146654862",
+            "life": 49576
+          },
+          "token": "756778524a50726f7332753146654862"
+        },
+        "display": "roborock.vacuum.s5 v3.5.8_002034 (7C:49:EB:9E:7A:92) @ 192.168.0.142 - token: 756778524a50726f7332753146654862"
+      }
+    },
+    "vacuum_status": {
+      "supported": true,
+      "elapsed_seconds": 0.024,
+      "result": {
+        "_type": "VacuumStatus",
+        "raw": {
+          "msg_ver": 3,
+          "msg_seq": 111807,
+          "state": 8,
+          "battery": 100,
+          "clean_time": 5008,
+          "clean_area": 81000000,
+          "error_code": 0,
+          "map_present": 1,
+          "in_cleaning": 0,
+          "in_returning": 0,
+          "in_fresh_state": 1,
+          "lab_status": 1,
+          "water_box_status": 0,
+          "fan_power": 104,
+          "dnd_enabled": 0,
+          "map_status": 3,
+          "lock_status": 0
+        },
+        "properties": {
+          "battery": 100,
+          "clean_area": 81.0,
+          "clean_time": {
+            "seconds": 5008.0,
+            "display": "1:23:28"
+          },
+          "error": "No error",
+          "error_code": 0,
+          "fanspeed": 104,
+          "got_error": false,
+          "in_segment_cleaning": false,
+          "in_zone_cleaning": false,
+          "is_on": false,
+          "is_paused": false,
+          "is_water_box_attached": false,
+          "is_water_box_carriage_attached": null,
+          "is_water_shortage": null,
+          "map": true,
+          "state": "Charging",
+          "state_code": 8
+        },
+        "display": "<VacuumStatus battery=100 clean_area=81.0 clean_time=1:23:28 error=No error error_code=0 fanspeed=104 got_error=False in_segment_cleaning=False in_zone_cleaning=False is_on=False is_paused=False is_water_box_attached=False is_water_box_carriage_attached=None is_water_shortage=None map=True state=Charging state_code=8>"
+      }
+    },
+    "fan_speed": {
+      "supported": true,
+      "elapsed_seconds": 0.042,
+      "result": 104
+    },
+    "fan_speed_presets": {
+      "supported": true,
+      "elapsed_seconds": 0.0,
+      "result": {
+        "Silent": 101,
+        "Standard": 102,
+        "Medium": 103,
+        "Turbo": 104,
+        "Gentle": 105,
+        "Auto": 106
+      }
+    },
+    "consumables": {
+      "supported": true,
+      "elapsed_seconds": 0.016,
+      "result": {
+        "_type": "ConsumableStatus",
+        "raw": {
+          "main_brush_work_time": 67701,
+          "side_brush_work_time": 67701,
+          "filter_work_time": 67701,
+          "filter_element_work_time": 0,
+          "sensor_dirty_time": 105869
+        },
+        "properties": {
+          "filter": {
+            "seconds": 67701.0,
+            "display": "18:48:21"
+          },
+          "filter_left": {
+            "seconds": 472299.0,
+            "display": "5 days, 11:11:39"
+          },
+          "main_brush": {
+            "seconds": 67701.0,
+            "display": "18:48:21"
+          },
+          "main_brush_left": {
+            "seconds": 1012299.0,
+            "display": "11 days, 17:11:39"
+          },
+          "sensor_dirty": {
+            "seconds": 105869.0,
+            "display": "1 day, 5:24:29"
+          },
+          "sensor_dirty_left": {
+            "seconds": 2131.0,
+            "display": "0:35:31"
+          },
+          "side_brush": {
+            "seconds": 67701.0,
+            "display": "18:48:21"
+          },
+          "side_brush_left": {
+            "seconds": 652299.0,
+            "display": "7 days, 13:11:39"
+          }
+        },
+        "display": "<ConsumableStatus filter=18:48:21 filter_left=5 days, 11:11:39 main_brush=18:48:21 main_brush_left=11 days, 17:11:39 sensor_dirty=1 day, 5:24:29 sensor_dirty_left=0:35:31 side_brush=18:48:21 side_brush_left=7 days, 13:11:39>"
+      }
+    },
+    "clean_history": {
+      "supported": true,
+      "elapsed_seconds": 0.036,
+      "result": {
+        "_type": "CleaningSummary",
+        "raw": {
+          "clean_time": 1848438,
+          "clean_area": 27553785000,
+          "clean_count": 1097,
+          "records": [
+            1783670469,
+            1783161688,
+            1783064274,
+            1782548094,
+            1781851981,
+            1781330216,
+            1780727900,
+            1780133150,
+            1779526524,
+            1779524602,
+            1778584090,
+            1778143153,
+            1777102824,
+            1776703645,
+            1776703043,
+            1776702939,
+            1776702858,
+            1775903387,
+            1775315414,
+            1775314772
+          ]
+        },
+        "properties": {
+          "count": 1097,
+          "dust_collection_count": null,
+          "ids": [
+            1783670469,
+            1783161688,
+            1783064274,
+            1782548094,
+            1781851981,
+            1781330216,
+            1780727900,
+            1780133150,
+            1779526524,
+            1779524602,
+            1778584090,
+            1778143153,
+            1777102824,
+            1776703645,
+            1776703043,
+            1776702939,
+            1776702858,
+            1775903387,
+            1775315414,
+            1775314772
+          ],
+          "total_area": 27553.785,
+          "total_duration": {
+            "seconds": 1848438.0,
+            "display": "21 days, 9:27:18"
+          }
+        },
+        "display": "<CleaningSummary count=1097 dust_collection_count=None ids=[1783670469, 1783161688, 1783064274, 1782548094, 1781851981, 1781330216, 1780727900, 1780133150, 1779526524, 1779524602, 1778584090, 1778143153, 1777102824, 1776703645, 1776703043, 1776702939, 1776702858, 1775903387, 1775315414, 1775314772] total_area=27553.785 total_duration=21 days, 9:27:18>"
+      }
+    },
+    "last_clean": {
+      "supported": true,
+      "elapsed_seconds": 0.046,
+      "result": {
+        "_type": "CleaningDetails",
+        "raw": {
+          "begin": 1783670469,
+          "end": 1783680641,
+          "duration": 5008,
+          "area": 81000000,
+          "error": 0,
+          "complete": 1
+        },
+        "properties": {
+          "area": 81.0,
+          "complete": true,
+          "duration": {
+            "seconds": 5008.0,
+            "display": "1:23:28"
+          },
+          "end": "2026-07-10T13:50:41",
+          "error": "No error",
+          "error_code": 0,
+          "start": "2026-07-10T11:01:09"
+        },
+        "display": "<CleaningDetails area=81.0 complete=True duration=1:23:28 end=2026-07-10 13:50:41 error=No error error_code=0 start=2026-07-10 11:01:09>"
+      }
+    },
+    "dnd": {
+      "supported": true,
+      "elapsed_seconds": 0.018,
+      "result": {
+        "_type": "DNDStatus",
+        "raw": {
+          "start_hour": 22,
+          "start_minute": 0,
+          "end_hour": 8,
+          "end_minute": 0,
+          "enabled": 1
+        },
+        "properties": {
+          "enabled": true,
+          "end": "08:00:00",
+          "start": "22:00:00"
+        },
+        "display": "<DNDStatus enabled=True end=08:00:00 start=22:00:00>"
+      }
+    },
+    "carpet_mode": {
+      "supported": true,
+      "elapsed_seconds": 0.019,
+      "result": {
+        "_type": "CarpetModeStatus",
+        "raw": {
+          "enable": 1,
+          "current_integral": 450,
+          "current_high": 500,
+          "current_low": 400,
+          "stall_time": 10
+        },
+        "properties": {
+          "current_high": 500,
+          "current_integral": 450,
+          "current_low": 400,
+          "enabled": true,
+          "stall_time": 10
+        },
+        "display": "<CarpetModeStatus current_high=500 current_integral=450 current_low=400 enabled=True stall_time=10>"
+      }
+    },
+    "room_mapping": {
+      "supported": true,
+      "elapsed_seconds": 0.019,
+      "result": []
+    }
+  }
+}
