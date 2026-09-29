@@ -94,7 +94,7 @@ Go to the Domoticz plugins directory:
 cd /home/pi/domoticz/plugins
 ```
 
-Clone the repository:
+Clone the repository directly into the `Roborock-MiIO` folder:
 
 ```bash
 git clone https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin.git Roborock-MiIO
@@ -140,7 +140,11 @@ Roborock Local
 
 # Manual installation
 
-If you do not want to use Git, download the repository ZIP from GitHub.
+If you do not want to use Git, download the repository ZIP from GitHub:
+
+```text
+https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin
+```
 
 Extract it so the plugin files are located directly in:
 
@@ -465,7 +469,7 @@ It can be used to check the capabilities returned by a specific Roborock model.
 Run:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 ./run_diagnostic.sh ROBOT_IP ROBOT_TOKEN auto
 ```
 
@@ -508,7 +512,7 @@ The diagnostic automatically redacts the miIO token from its output.
 If the plugin was installed using Git:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 ./update.sh
 sudo systemctl restart domoticz
 ```
@@ -529,13 +533,13 @@ The existing Domoticz hardware configuration and devices are not deleted.
 If the plugin was installed manually, download the latest files and overwrite the existing files inside:
 
 ```text
-/home/pi/domoticz/plugins/Roborock
+/home/pi/domoticz/plugins/Roborock-MiIO
 ```
 
 Then run:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 ./install.sh
 sudo systemctl restart domoticz
 ```
@@ -551,7 +555,7 @@ First remove the `Roborock Local` hardware from Domoticz.
 Then run:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 ./uninstall.sh
 ```
 
@@ -561,7 +565,7 @@ To completely remove the plugin:
 
 ```bash
 cd /home/pi/domoticz/plugins
-rm -rf Roborock
+rm -rf Roborock-MiIO
 sudo systemctl restart domoticz
 ```
 
@@ -574,7 +578,7 @@ sudo systemctl restart domoticz
 Make sure `plugin.py` is directly inside:
 
 ```text
-/home/pi/domoticz/plugins/Roborock
+/home/pi/domoticz/plugins/Roborock-MiIO
 ```
 
 Then restart Domoticz:
@@ -588,7 +592,7 @@ sudo systemctl restart domoticz
 Run:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 ./install.sh
 sudo systemctl restart domoticz
 ```
@@ -623,7 +627,7 @@ UnsupportedAlgorithm: cipher AES in CBC mode is not supported
 run:
 
 ```bash
-cd /home/pi/domoticz/plugins/Roborock
+cd /home/pi/domoticz/plugins/Roborock-MiIO
 ./install.sh
 sudo systemctl restart domoticz
 ```
@@ -655,7 +659,9 @@ This project uses and builds on several open-source projects and documented inte
 
 Repository:
 
+```text
 https://github.com/rytilahti/python-miio
+```
 
 `python-miio` provides the Xiaomi miIO protocol implementation and the `RoborockVacuum` integration used to communicate with compatible legacy Roborock devices.
 
@@ -665,7 +671,9 @@ The library supports local communication using the device IP address and token.
 
 Repository:
 
+```text
 https://github.com/Legrandin/pycryptodome
+```
 
 The plugin uses the `pycryptodomex` package and its separate `Cryptodome` namespace for the AES-CBC compatibility layer used by legacy miIO communication.
 
@@ -673,7 +681,9 @@ The plugin uses the `pycryptodomex` package and its separate `Cryptodome` namesp
 
 Documentation:
 
+```text
 https://wiki.domoticz.com/Developing_a_Python_plugin
+```
 
 The plugin itself is built using the Domoticz Python Plugin Framework.
 
@@ -681,7 +691,9 @@ The plugin itself is built using the Domoticz Python Plugin Framework.
 
 Repository:
 
+```text
 https://github.com/mrin/domoticz-mirobot-plugin
+```
 
 The older `domoticz-mirobot-plugin` project demonstrated Xiaomi Mi Robot / Roborock integration with Domoticz and also used `python-miio`.
 
@@ -712,7 +724,7 @@ https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin
 Clone:
 
 ```bash
-git clone https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin.git Roborock
+git clone https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin.git Roborock-MiIO
 ```
 
 ---
