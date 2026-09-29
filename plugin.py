@@ -8,7 +8,7 @@
 #   Xiaomi miIO protocol (local IP + 32-character token).
 #
 """
-<plugin key="RoborockLocal" name="Roborock Local" author="Everpro" version="1.0.4">
+<plugin key="RoborockLocal" name="Roborock Local" author="4D" version="1.0.4" externallink="https://github.com/blooesky/Domoticz-Roborock-MiIO-Plugin">
     <description>
         <h2>Roborock Local</h2>
         <p>Local LAN control for older Roborock vacuum cleaners using Xiaomi miIO.</p>
